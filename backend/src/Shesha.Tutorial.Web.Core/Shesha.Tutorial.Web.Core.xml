@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Shesha.Tutorial.Web.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Shesha.Tutorial.Common.Authorization.CommonRoles">
+            <summary>
+            Tutorial Role Names
+            </summary>
+        </member>
+        <member name="F:Shesha.Tutorial.Common.Authorization.CommonRoles.DataAdministrator">
+            <summary>
+            Data Administrator
+            </summary>
+        </member>
+        <member name="F:Shesha.Tutorial.Common.Authorization.CommonRoles.SystemAdministrator">
+            <summary>
+            System Administrator
+            </summary>
+        </member>
+        <member name="F:Shesha.Tutorial.Common.Authorization.CommonRoles.GlobalAdmin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Shesha.Tutorial.Common.Authorization.ItutorialPermissionChecker">
+            <summary>
+            Tutorial Permission checker
+            </summary>
+        </member>
+        <member name="M:Shesha.Tutorial.Common.Authorization.ItutorialPermissionChecker.IsDataAdministrator(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shesha.Tutorial.Common.Authorization.ItutorialPermissionChecker.IsGlobalAdmin(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shesha.Tutorial.Common.Authorization.ItutorialPermissionChecker.IsAdmin(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Shesha.Tutorial.Common.Authorization.tutorialPermissionChecker">
+            <summary>
+            Tutorial Permission checker
+            </summary>
+        </member>
+        <member name="M:Shesha.Tutorial.Common.Authorization.tutorialPermissionChecker.#ctor(Abp.Domain.Repositories.IRepository{Shesha.Domain.Person,System.Guid},Abp.Domain.Repositories.IRepository{Shesha.Domain.ShaRoleAppointedPerson,System.Guid},Abp.Domain.Repositories.IRepository{Shesha.Domain.ShaRoleAppointmentEntity,System.Guid})">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Shesha.Tutorial.Common.Authorization.tutorialPermissionChecker.IsGrantedAsync(System.Int64,System.String)">
+            <summary>
+            inheritedDoc
+            </summary>
+            <param name="userId"></param>
+            <param name="permissionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shesha.Tutorial.Common.Authorization.tutorialPermissionChecker.IsGranted(System.Int64,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="permissionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shesha.Tutorial.Common.Authorization.tutorialPermissionChecker.IsInAnyOfRoles(Shesha.Domain.Person,System.String[])">
+            <summary>
+            inheritedDoc
+            </summary>
+            <param name="person"></param>
+            <param name="roles"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shesha.Tutorial.Common.Authorization.tutorialPermissionChecker.IsDataAdministrator(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shesha.Tutorial.Common.Authorization.tutorialPermissionChecker.IsAdmin(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shesha.Tutorial.Common.Authorization.tutorialPermissionChecker.IsGlobalAdmin(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Shesha.Tutorial.DbmsHelper">
+            <summary>
+            Dbms configuration helper
+            </summary>
+        </member>
+        <member name="M:Shesha.Tutorial.DbmsHelper.GetDbmsType(Microsoft.Extensions.Configuration.IConfigurationRoot)">
+            <summary>
+            Get current Dbms type
+            </summary>
+        </member>
+        <member name="M:Shesha.Tutorial.DbmsHelper.GetDefaultConnectionString(Microsoft.Extensions.Configuration.IConfigurationRoot)">
+            <summary>
+            Get default connection string
+            </summary>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Shesha.Tutorial.Hangfire.HangfireAuthorizationFilter">
+            <summary>
+            Hangfire authorization filter: This should be obsolete since Shesha comes with Hangfire Authorization inbuilt
+            </summary>
+        </member>
+        <member name="M:Shesha.Tutorial.Hangfire.HangfireAuthorizationFilter.Authorize(Hangfire.Dashboard.DashboardContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Shesha.Tutorial.Swagger.ApiExplorerGroupPerControllerConvention">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Shesha.Tutorial.Swagger.ApiExplorerGroupPerControllerConvention.Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel)">
+            <summary>
+            
+            </summary>
+            <param name="controller"></param>
+        </member>
+        <member name="M:Shesha.Tutorial.Swagger.ApiExplorerGroupPerControllerConvention.GroupInclusionPredicate(System.String,Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription)">
+            <summary>
+            
+            </summary>
+            <param name="docName"></param>
+            <param name="apiDescription"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Shesha.Tutorial.tutorialWebCoreModule">
+            <summary>
+            ReSharper disable once InconsistentNaming
+            </summary>
+        </member>
+        <member name="M:Shesha.Tutorial.tutorialWebCoreModule.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="env"></param>
+        </member>
+        <member name="M:Shesha.Tutorial.tutorialWebCoreModule.PreInitialize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Shesha.Tutorial.tutorialWebCoreModule.Initialize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Shesha.Identity.ExternalLoginInfoHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Shesha.Identity.ExternalLoginInfoHelper.GetNameAndSurnameFromClaims(System.Collections.Generic.List{System.Security.Claims.Claim})">
+            <summary>
+            
+            </summary>
+            <param name="claims"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

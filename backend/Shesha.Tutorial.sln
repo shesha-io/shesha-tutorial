@@ -1,0 +1,69 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9695FC1C-6D7C-4FE8-A47B-0D35F0A6649D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{244B7A5A-6740-4EE8-BCA3-5484C9DDF56A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shesha.Tutorial.Web.Host", "src\Shesha.Tutorial.Web.Host\Shesha.Tutorial.Web.Host.csproj", "{6B37334E-6B2D-4EFC-931B-E350C47B62A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shesha.Tutorial.Web.Core", "src\Shesha.Tutorial.Web.Core\Shesha.Tutorial.Web.Core.csproj", "{E2DCA9A1-9DC5-4AD1-96E7-0F03F3B5BD9D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shesha.Tutorial.Domain", "src\Module\Shesha.Tutorial.Domain\Shesha.Tutorial.Domain.csproj", "{E85714E5-DC6B-4E3D-B645-9C7477DB4E17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shesha.Tutorial.Application", "src\Module\Shesha.Tutorial.Application\Shesha.Tutorial.Application.csproj", "{843BBBF9-44EE-4E6F-98A8-EE6CD565BF18}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shesha.Tutorial.Common.Domain.Tests", "test\Shesha.Tutorial.Common.Domain.Tests\Shesha.Tutorial.Common.Domain.Tests.csproj", "{0D2FCB82-AE26-4B29-A8F3-1BC2D91B22A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DebugLocalShesha|Any CPU = DebugLocalShesha|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B37334E-6B2D-4EFC-931B-E350C47B62A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B37334E-6B2D-4EFC-931B-E350C47B62A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B37334E-6B2D-4EFC-931B-E350C47B62A2}.DebugLocalShesha|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B37334E-6B2D-4EFC-931B-E350C47B62A2}.DebugLocalShesha|Any CPU.Build.0 = Debug|Any CPU
+		{6B37334E-6B2D-4EFC-931B-E350C47B62A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B37334E-6B2D-4EFC-931B-E350C47B62A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2DCA9A1-9DC5-4AD1-96E7-0F03F3B5BD9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2DCA9A1-9DC5-4AD1-96E7-0F03F3B5BD9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2DCA9A1-9DC5-4AD1-96E7-0F03F3B5BD9D}.DebugLocalShesha|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2DCA9A1-9DC5-4AD1-96E7-0F03F3B5BD9D}.DebugLocalShesha|Any CPU.Build.0 = Debug|Any CPU
+		{E2DCA9A1-9DC5-4AD1-96E7-0F03F3B5BD9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2DCA9A1-9DC5-4AD1-96E7-0F03F3B5BD9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E85714E5-DC6B-4E3D-B645-9C7477DB4E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E85714E5-DC6B-4E3D-B645-9C7477DB4E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E85714E5-DC6B-4E3D-B645-9C7477DB4E17}.DebugLocalShesha|Any CPU.ActiveCfg = Debug|Any CPU
+		{E85714E5-DC6B-4E3D-B645-9C7477DB4E17}.DebugLocalShesha|Any CPU.Build.0 = Debug|Any CPU
+		{E85714E5-DC6B-4E3D-B645-9C7477DB4E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E85714E5-DC6B-4E3D-B645-9C7477DB4E17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843BBBF9-44EE-4E6F-98A8-EE6CD565BF18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843BBBF9-44EE-4E6F-98A8-EE6CD565BF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843BBBF9-44EE-4E6F-98A8-EE6CD565BF18}.DebugLocalShesha|Any CPU.ActiveCfg = Debug|Any CPU
+		{843BBBF9-44EE-4E6F-98A8-EE6CD565BF18}.DebugLocalShesha|Any CPU.Build.0 = Debug|Any CPU
+		{843BBBF9-44EE-4E6F-98A8-EE6CD565BF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843BBBF9-44EE-4E6F-98A8-EE6CD565BF18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2FCB82-AE26-4B29-A8F3-1BC2D91B22A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2FCB82-AE26-4B29-A8F3-1BC2D91B22A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2FCB82-AE26-4B29-A8F3-1BC2D91B22A0}.DebugLocalShesha|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2FCB82-AE26-4B29-A8F3-1BC2D91B22A0}.DebugLocalShesha|Any CPU.Build.0 = Debug|Any CPU
+		{0D2FCB82-AE26-4B29-A8F3-1BC2D91B22A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2FCB82-AE26-4B29-A8F3-1BC2D91B22A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D2FCB82-AE26-4B29-A8F3-1BC2D91B22A0} = {244B7A5A-6740-4EE8-BCA3-5484C9DDF56A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95ED23F3-8DEA-456E-A44B-87A161CB696A}
+	EndGlobalSection
+EndGlobal
