@@ -4,7 +4,6 @@ import React, { FC } from "react";
 import { FormIdentifier, FormsDesignerPage } from "@shesha-io/reactjs";
 import { useSearchParams, notFound } from "next/navigation";
 import styled from "styled-components";
-// import { NoSaveFormsDesignerPage } from "./styles";
 
 const Page: FC = () => {
   const query = useSearchParams();

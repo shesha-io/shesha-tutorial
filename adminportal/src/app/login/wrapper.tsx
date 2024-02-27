@@ -1,5 +1,5 @@
-import { UnAuthedAccountPageLayout } from "@/components";
-import styled from "styled-components";
+import { UnAuthedAccountPageLayout } from '@/components';
+import styled from 'styled-components';
 
 export const LoginPageWrapper = styled(UnAuthedAccountPageLayout)`
   .custom-form-item {
@@ -13,7 +13,6 @@ export const LoginPageWrapper = styled(UnAuthedAccountPageLayout)`
 
   .ant-form-item {
     margin-bottom: 12px !important;
-    background: red;
   }
 
   .ant-form-item-with-help {

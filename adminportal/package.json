@@ -52,7 +52,7 @@
     "react-sortablejs": "^6.1.4",
     "react-use": "^17.4.0",
     "sortablejs": "^1.14.0",
-    "styled-components": "^5.3.11"
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.1.0",
