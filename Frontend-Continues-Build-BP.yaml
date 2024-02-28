@@ -116,7 +116,7 @@ stages:
 
                     $filePath = "package.json"                    
                     $Jsonfile = Get-Content $filePath -raw | ConvertFrom-Json
-                    $Jsonfile.name = "@shesha-io/$(Build.Repository.Name)"
+                    $Jsonfile.name = "@shesha-io/shesha-tutorial"
                     $Jsonfile.version = "$(versionNo)"
                     ConvertTo-Json $Jsonfile -Depth 5 | Set-Content $filePath
 
