@@ -10,8 +10,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   noStore();
-  const backendUrl =
-    process.env.NEXT_PUBLIC_BACKEND_URL ?? "http://localhost:21021";
+  const backendUrl = process.env.BACKEND_URL ?? "http://localhost:21021";
 
   return (
     <html lang="en">
