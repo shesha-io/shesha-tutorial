@@ -43,7 +43,7 @@ const Login = () => {
         form={form}
         onFinish={handleLogin}
         initialValues={{
-          userNameOrEmailAddress: "SheshaTutorial",
+          userNameOrEmailAddress: "admin",
           password: "SheshaTutorial01",
         }}
       >
