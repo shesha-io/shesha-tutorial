@@ -14,11 +14,11 @@ const Page: FC = () => {
   const formId: FormIdentifier = id
     ? id
     : name
-    ? {
+      ? {
         name: name,
         module: moduleName,
       }
-    : undefined;
+      : undefined;
 
   if (!formId) return notFound();
 
