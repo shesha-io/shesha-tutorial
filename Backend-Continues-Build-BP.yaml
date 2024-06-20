@@ -145,6 +145,9 @@ stages:
             retryCountOnTaskFailure: 3
             inputs:
               version: 8.x
+
+          echo $(Build.BuildNumber)
+          echo $(versionNo)
           - task: Assembly-Info-NetCore@3
             displayName: 'Set Assembly Manifest Data'
             inputs:
