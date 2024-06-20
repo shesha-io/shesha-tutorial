@@ -145,17 +145,14 @@ stages:
             retryCountOnTaskFailure: 3
             inputs:
               version: 8.x
-
-          echo $(Build.BuildNumber)
-          echo $(versionNo)
           - task: Assembly-Info-NetCore@3
             displayName: 'Set Assembly Manifest Data'
             inputs:
               InsertAttributes: true
-              VersionNumber: '$(versionNo)'
-              FileVersionNumber: '$(versionNo)'
-              InformationalVersion: '$(versionNo)'
-              PackageVersion: '$(versionNo)'
+              VersionNumber: 0.0.0-build$(Build.BuildNumber)
+              FileVersionNumber: 0.0.0-build$(Build.BuildNumber)
+              InformationalVersion: 0.0.0-build$(Build.BuildNumber)
+              PackageVersion: 0.0.0-build$(Build.BuildNumber)
           # - task: DotNetCoreCLI@2
           #   displayName: dotnet Restore
           #   inputs:
