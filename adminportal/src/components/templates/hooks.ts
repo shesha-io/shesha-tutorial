@@ -1,5 +1,5 @@
 import { IAjaxResponse, useSheshaApplication } from "@shesha-io/reactjs";
-import { Template, TemplateDefinition } from "./model";
+import { Template } from "./model";
 import axios from "axios";
 import { URLS } from "./fetchers";
 import useSWR from "swr";

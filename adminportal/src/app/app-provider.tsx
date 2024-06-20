@@ -11,7 +11,6 @@ import {
 import { AppProgressBar } from "next-nprogress-bar";
 import { useTheme } from "antd-style";
 import { EnquiryActionsProvider } from "@/components/templates/dynamic-templates";
-/* NEW_TOOLBOXCOMPONENT_IMPORT_GOES_HERE */
 
 export interface IAppProviderProps {
   backendUrl: string;
@@ -41,11 +40,6 @@ export const AppProvider: FC<PropsWithChildren<IAppProviderProps>> = ({
         backendUrl={backendUrl}
         router={nextRouter}
         noAuth={false}
-        toolboxComponentGroups={
-          [
-            /* NEW_TOOLBOXCOMPONENT_GOES_HERE */
-          ]
-        }
       >
         <EnquiryActionsProvider>
           <StoredFilesProvider baseUrl={backendUrl} ownerId={""} ownerType={""}>
