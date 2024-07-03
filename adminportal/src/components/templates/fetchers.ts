@@ -1,5 +1,5 @@
 export const URLS = {
-  GET_ALL_TEMPLATES: `/api/dynamic/Shesha.Tutorial/Template/GetAll`,
+  GET_ALL_TEMPLATES: `/api/dynamic/Shesha.Tutorial/Template/Crud/GetAll`,
 };
 
 export function GetMember() {

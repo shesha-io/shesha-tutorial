@@ -38,7 +38,7 @@ const useEnquiryInitiateActions: DynamicItemsEvaluationHook = (args) => {
                 actionOwner: "shesha.common",
                 actionArguments: {
                     verb: "post",
-                    url: `/api/dynamic/Shesha.Tutorial/Enquiry/Create`,
+                    url: `/api/dynamic/Shesha.Tutorial/Enquiry/Crud/Create`,
                     parameters: [
                         {
                             id: "CBc2Xng3M682kZwGhAwHt",
