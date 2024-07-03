@@ -8,10 +8,8 @@ import {
 } from "@ant-design/icons";
 import { Button, Checkbox, Form, Input } from "antd";
 import FormItem from "antd/lib/form/FormItem";
-import Link from "next/link";
 import React from "react";
 import { useAuth, ValidationErrors } from "@shesha-io/reactjs";
-import { URL_FORGOT_PASSWORD } from "@/routes";
 import { LoginPageWrapper } from "./wrapper";
 
 interface ILoginForm {
