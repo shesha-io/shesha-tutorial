@@ -2,11 +2,10 @@ using System.Reflection;
 using Abp.AspNetCore.Configuration;
 using Abp.AutoMapper;
 using Abp.Modules;
-using Castle.MicroKernel.Registration;
 using Intent.RoslynWeaver.Attributes;
-using Shesha;
-using Shesha.Authorization;
 using Shesha.Modules;
+using Shesha.Settings.Ioc;
+using Shesha.Tutorial.Domain.Configurations.Membership;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Boxfusion.Modules.Domain.Module", Version = "1.0")]
@@ -44,6 +43,20 @@ namespace Shesha.Tutorial.Domain
         public override void PreInitialize()
         {
             base.PreInitialize();
+
+            IocManager.RegisterSettingAccessor<IMembershipSettings>(s =>
+            {
+                s.DebitDay.WithDefaultValue(1);
+                s.MembershipPayments.WithDefaultValue(new MembershipPaymentSettings
+                {
+                    DebitDay = 1,
+                    InitialReminder = 3,
+                    DueDateReminder = true,
+                    FirstOverdueReminder = 1,
+                    SubsequentOverdueReminder = 7,
+                    FinalNotice = 30
+                });
+            });
         }
 
         /// inheritedDoc
