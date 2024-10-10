@@ -4,7 +4,7 @@ import { useShowDynamicMessageAction } from "./dynamic-action";
 
 export const CustomConfigurableActionsAccessor: FC<PropsWithChildren<{}>> = ({ children }) => {
     useShowStaticMessageAction();
-    useShowDynamicMessageAction()
+    useShowDynamicMessageAction();
 
     return (
         <>{children}</>

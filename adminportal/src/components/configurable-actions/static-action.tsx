@@ -11,7 +11,7 @@ export const useShowStaticMessageAction = () => {
         hasArguments: false,
        executer: () => {
             message.info('This is a static message');
-            return Promise.resolve()
+            return Promise.resolve();
         }
     }, []);
 };  

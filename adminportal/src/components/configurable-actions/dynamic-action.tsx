@@ -21,7 +21,7 @@ export const useShowDynamicMessageAction = () => {
             const { dynamicMessage } = actionArgs;
             const { application: { user }} = context;
             message.info(`Hello ${user.userName}, ${dynamicMessage}`);
-            return Promise.resolve()
+            return Promise.resolve();
         }
     }, []);
 };  

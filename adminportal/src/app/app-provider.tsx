@@ -5,7 +5,6 @@ import {
   GlobalStateProvider,
   ShaApplicationProvider,
   StoredFilesProvider,
-  MainLayout,
   useNextRouter,
 } from "@shesha-io/reactjs";
 import { AppProgressBar } from "next-nprogress-bar";
